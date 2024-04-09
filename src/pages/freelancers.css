@@ -1,0 +1,242 @@
+.lcfreelancers {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lcfreelancersheading {
+  font-size: 35px;
+  margin: 70px 0 30px;
+}
+.search {
+  height: 60px;
+  background-color: rgb(207, 207, 207);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 90vw;
+  margin-bottom: 50px;
+}
+.search input {
+  height: 100%;
+  color: black;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  font-size: 17px;
+  width: 350px;
+}
+.addgig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.addgig h2 {
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+.search button {
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: rgb(190, 190, 190);
+  padding: 0 15px;
+  cursor: pointer;
+}
+.cards {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.card {
+  /* width: 23%; */
+  aspect-ratio: 9/10;
+  background-color: rgb(211, 211, 211);
+  overflow: hidden;
+  max-width: 400px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  min-width: 200px;
+}
+
+.imageDiv {
+  width: 100%;
+  height: 60%;
+  max-height: 59%;
+}
+.imageDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textDiv {
+  height: 30%;
+  width: 100%;
+}
+.infoDiv {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.infoDiv img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.infoDiv p {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  padding: 0;
+}
+.infoDiv p,
+.textDiv {
+  padding: 5px 10px;
+}
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.buttonsincard {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover .buttonsincard {
+  opacity: 1;
+}
+.confirm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a7a7a7;
+  padding: 50px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.confirm h1 {
+  width: 100%;
+  text-align: center;
+}
+.innerConfirm {
+  margin: 20px 0;
+}
+.innerConfirm button {
+  margin: 0 5px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.buttonsincard button {
+  margin: 0 5px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.edit {
+  background-color: rgb(71, 248, 71);
+}
+.delete {
+  background-color: rgb(252, 52, 52);
+}
+.textDiv h3 {
+  font-size: 1.4vw !important;
+  line-height: 1.2em;
+  max-height: 3.7em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: ellipsis !important;
+  color: rgb(24, 24, 24);
+  max-width: 100%;
+}
+@media (min-width: 2000px) {
+  .textDiv h3 {
+    font-size: 35px !important;
+
+    color: rgb(24, 24, 24);
+  }
+}
+@media (max-width: 900px) {
+  .textDiv h3 {
+    font-size: 16px !important;
+
+    color: rgb(24, 24, 24);
+  }
+
+  .infoDiv p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .search {
+    width: 90vw !important;
+  }
+  .search input {
+    width: 70%;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .search button {
+    width: 30%;
+  }
+}
+@media (max-width: 1000px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 730px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 470px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .textDiv h3 {
+    font-size: 20px !important;
+
+    color: rgb(24, 24, 24);
+  }
+}
+.loadmore {
+  padding: 10px 30px;
+  background: rgb(0, 153, 255);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin: 50px 50px;
+}

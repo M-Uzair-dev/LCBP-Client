@@ -1,0 +1,139 @@
+.gigDetailsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gigDetailsPage > h1 {
+  text-align: center;
+  width: 100%;
+  margin: 60px 0;
+}
+.gigdetailswrapper {
+  width: 90vw;
+  margin: 0 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+}
+.aboutText {
+  text-align: justify;
+}
+.imageInputDiv {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(184, 184, 184);
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.imageInputDiv > input {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100000;
+}
+.green {
+  background-color: rgb(155, 255, 108);
+}
+.imageInputDiv > h1 {
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.gigImage {
+  width: 100%;
+  max-height: 900px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.profileInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+.profileInfo h1 {
+  margin: 0;
+}
+.profileInfo img {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.profileInfo h1 {
+  font-size: 25px;
+  text-align: left;
+}
+.gigdetailstext {
+  width: 100%;
+}
+.gigdetailstext h1 {
+  margin: 20px 0;
+  background: linear-gradient(to right, rgb(0, 174, 255), rgb(89, 202, 255));
+  width: max-content;
+  background-clip: text;
+  color: transparent;
+}
+.gigdetailstext > div > h5 {
+  font-weight: 600;
+  font-size: 22px;
+}
+.price {
+  width: 100%;
+  text-align: left;
+  color: rgb(0, 184, 0);
+}
+.gigdetailstext > div > h5 > span,
+.gigdetailstext > h5 {
+  font-weight: 400;
+}
+.gigdetailstext > h5 {
+  text-align: justify;
+}
+.addgigpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.addgigpage > h1 {
+  text-align: center;
+  width: 100%;
+  margin: 60px 0;
+}
+.inputsWrapper {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin-bottom: 50px;
+}
+.inputsWrapper input,
+.inputsWrapper textarea {
+  padding: 15px 10px;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(204, 204, 204);
+  max-height: 200px;
+}
+.inputsWrapper button {
+  outline: none;
+  border: none;
+  background-color: rgb(156, 156, 156);
+  border-radius: 10px;
+  padding: 15px 10px;
+  font-size: 17px;
+  cursor: pointer;
+}

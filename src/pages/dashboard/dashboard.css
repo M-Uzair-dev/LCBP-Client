@@ -1,0 +1,358 @@
+.dashboard {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  background: #e0e0e0;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.dashboardsidebar {
+  margin: 0;
+  padding: 0;
+  width: 20vw;
+  transition: 0.5s all ease-out;
+  max-width: 400px;
+  z-index: 10000000;
+}
+.dashboardlogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.dashboardlogo img {
+  max-height: 50px;
+  margin: 20px 0;
+}
+.dashboardmenu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dashboardmenu > ul {
+  width: 100%;
+}
+.dashboardbuttons {
+  height: 60px;
+  width: 80%;
+  margin: 0 5%;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 13px #b1b1b1, -5px -5px 13px #ffffff;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.dashboardbuttons:hover {
+  box-shadow: 8px 8px 16px #b1b1b1, -8px -8px 16px #ffffff;
+}
+.dashboardbuttons a {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: black !important;
+  display: flex;
+  align-items: center;
+}
+.dashboardbuttons a * {
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+.dashboardbutton1 > a > * {
+  color: #f5af19;
+}
+.dashboardbutton2 > a > * {
+  color: #8360c3;
+}
+.dashboardbutton3 > a > * {
+  color: #ec2f4b;
+}
+.dashboardbutton4 > a > * {
+  color: #00b4db;
+}
+.dashboardbutton5 > a > * {
+  color: #89216b;
+}
+.dashboardbutton6 > a > * {
+  color: #c06c84;
+}
+.dashboardbutton7 > a > * {
+  color: #00a2ff;
+}
+.dashboardmaincontainer {
+  width: 80vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboardwrapper {
+  height: 90vh;
+  width: 95%;
+  padding: 0 3%;
+  overflow-y: scroll;
+  scrollbar-color: #a3a3a3 #ececec;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #ececec;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(192, 192, 192);
+  border-radius: 6px;
+}
+.dashboardboxes {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+.dashboardcontainer {
+  margin: 0;
+  max-width: 18%;
+  padding: 20px 30px;
+  box-shadow: 5px 5px 13px #b1b1b1, -5px -5px 13px #ffffff;
+  border-radius: 10px;
+  min-width: 150px;
+  min-height: 120px;
+  max-height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: max-content;
+}
+.dashboardcontainer:first-of-type {
+  margin-left: 0;
+}
+.dashboardcontainer p {
+  margin: 5px 0;
+  padding: 0;
+  font-size: 18px;
+  max-width: 100%;
+}
+.dashboardcontainer h1 {
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.container1 p {
+  color: rgba(0, 110, 255, 0.801);
+}
+.dashboarddropdown {
+  position: relative;
+  width: max-content;
+}
+.dashboarddropdown p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: rgb(41, 41, 41) !important;
+  text-align: center;
+}
+.selected {
+  width: max-content;
+  height: max-content;
+  background-color: #cacaca;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.selected p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+.selected p * {
+  margin: 0;
+  padding: 0;
+  transition: 0.4s all ease-out;
+}
+.dashboarddrop {
+  background-color: #cacaca;
+  border-radius: 5px;
+  overflow: hidden;
+  width: max-content;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 105%);
+}
+.dashboarddrop p {
+  padding: 10px 20px;
+  max-width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.dashboarddrop p:hover {
+  background-color: #bbbbbb;
+}
+.container1 h1 {
+  width: max-content;
+  background: linear-gradient(to left, rgb(0, 119, 255), rgb(82, 177, 255));
+  background-clip: text;
+  color: transparent;
+}
+.container2 p {
+  width: max-content;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  background-clip: text;
+  color: transparent;
+}
+
+.container2 h1 {
+  width: max-content;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  background-clip: text;
+  color: transparent;
+}
+
+.container3 p {
+  width: max-content;
+  background: linear-gradient(to right, #ff0099, #493240);
+  background-clip: text;
+  color: transparent;
+}
+
+.container3 h1 {
+  width: calc(max-content+10px);
+  background: linear-gradient(to right, #ff0099, #493240);
+  background-clip: text;
+  color: transparent;
+}
+.container4 p {
+  width: max-content;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  background-clip: text;
+  color: transparent;
+}
+
+.container4 h1 {
+  width: calc(max-content+10px);
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  background-clip: text;
+  color: transparent;
+}
+
+.container5 p {
+  width: max-content;
+  background: linear-gradient(to right, #f953c6, #b91d73);
+  background-clip: text;
+  color: transparent;
+}
+
+.container5 h1 {
+  width: calc(max-content+10px);
+  background: linear-gradient(to right, #f953c6, #b91d73);
+  background-clip: text;
+  color: transparent;
+}
+.container6 p {
+  width: max-content;
+  background: linear-gradient(to right, #0f9b0f, #000000);
+  background-clip: text;
+  color: transparent;
+}
+
+.container6 h1 {
+  width: calc(max-content+10px);
+  background: linear-gradient(to right, #0f9b0f, #000000);
+  background-clip: text;
+  color: transparent;
+}
+.container7 p {
+  width: max-content;
+  background: linear-gradient(to right, #cb356b, #bd3f32);
+  background-clip: text;
+  color: transparent;
+}
+
+.container7 h1 {
+  width: calc(max-content+10px);
+  background: linear-gradient(to right, #cb356b, #bd3f32);
+  background-clip: text;
+  color: transparent;
+}
+.charts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.charts > * {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.chartheading {
+  margin-left: 5px;
+}
+.chartheading2 {
+  margin-top: 30px;
+}
+.DashboardMenuIcon {
+  display: none !important;
+}
+.sidebarCloseIcon {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 2.5rem !important;
+  margin-right: 20px;
+}
+.sidebarCloseIconWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1070px) {
+  .sidebarCloseIconWrapper {
+    display: flex;
+  }
+  .DashboardMenuIcon {
+    display: block !important;
+  }
+  .dashboardmaincontainer {
+    width: 100%;
+  }
+  .dashboardsidebar {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #e0e0e0;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    transform: translateX(-150%);
+    box-shadow: 1px 1px 73px 1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 1px 1px 73px 1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 1px 1px 73px 1px rgba(0, 0, 0, 0.39);
+  }
+  .showsidebar {
+    transform: translateX(0%);
+  }
+}
+@media (max-width: 425px) {
+  .dashboardcontainer {
+    width: 80%;
+    margin: 15px 10% !important;
+    max-width: 100000000000000px;
+    min-width: 0px;
+  }
+}

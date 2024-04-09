@@ -1,0 +1,45 @@
+.updateProfilePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.updateProfilePage label {
+  margin-top: 5px;
+}
+.updateProfilePage input {
+  background-color: rgb(202, 202, 202);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 300px;
+  outline: none;
+  max-width: 95vw;
+}
+.inputNumber::-webkit-inner-spin-button,
+.inputNumber::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputNumber {
+  -moz-appearance: textfield;
+}
+.updateProfilePage button {
+  background-color: rgb(177, 177, 177);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 300px;
+  outline: none;
+  max-width: 95vw;
+  border: 2px solid grey;
+  cursor: pointer;
+}
